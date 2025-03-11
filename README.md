@@ -52,7 +52,7 @@ Resume Analyzer AI is a tool designed to assess how effectively resumes match jo
 ## Setup Instructions
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-repo/resume-analyzer.git
+   git clone https://github.com/yordanoswuletaw/resume-analyzer.git
    cd resume-analyzer
    ```
 2. Initialize and install dependencies using GNU Make and Poetry:
