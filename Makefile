@@ -22,4 +22,4 @@ help:
 # ======================================
 
 run-model: # Run the model
-	cd src/code && poetry run python -m script
+	cd src/ && streamlit run main.py
