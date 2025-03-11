@@ -89,6 +89,10 @@ resume-analyzer/
 │-- pyproject.toml
 │-- README.md
 ```
+## Sample Output
+
+Below are sample outputs from the Resume Analyzer AI:
+ ![Resume Comparison Analysis](media/img.png)
 
 ## License
 This project is licensed under the MIT License.
