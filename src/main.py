@@ -147,7 +147,7 @@ if prompt := st.chat_input():
 def get_llm_response():
     with st.chat_message("assistant"):
         with st.spinner("Thinking..."):
-            response = generate_response(prompt + SYSTEM_PROMPT)
+            response = generate_response((prompt or settings.default_jd_prompt) + SYSTEM_PROMPT)
             placeholder = st.empty()
             full_response = ''
             for item in response:

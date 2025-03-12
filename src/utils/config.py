@@ -49,7 +49,7 @@ class AppSettings(BaseSettings):
     relevant_skills_highlight_prompt: str = "Analyze this resume: <RESUME STARTS HERE> {} <RESUME ENDS HERE> and provide suggestions on restructuring it to foreground skills and experiences pertinent to the job description: <JOB DESCRIPTION STARTS HERE> {}. <JOB DESCRIPTION ENDS HERE>"
     resume_formatting_prompt: str = "Offer guidance on how the candidate can enhance the formatting of their resume: <RESUME STARTS HERE> {} <RESUME ENDS HERE> to improve visual appeal and readability."
     resume_length_prompt: str = "Recommend strategies for the candidate to adjust the length of their resume: <RESUME STARTS HERE> {} <RESUME ENDS HERE>, ensuring it is concise while remaining aligned with the requirements in the job description: <JOB DESCRIPTION STARTS HERE> {}. <JOB DESCRIPTION ENDS HERE>"
-
+    default_jd_prompt: str = 'Given the following resume, identify the primary job role or field the candidate is targeting. Focus on the key skills, experience, and industry mentioned in the resume to determine the most relevant job position.'
     class Config:
         env_file = f'{ROOT_DIR}/.env'
 
