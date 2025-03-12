@@ -10,14 +10,14 @@ ROOT_DIR = str(Path(__file__).parent.parent.parent)
 class AppSettings(BaseSettings):
 
     GOOGLE_API_KEY: str | None
-    GEMINI_MODEL_NAME: str | None
-    EMBEDDING_MODEL_NAME: str | None
-    JD_EMBEDDING_FILE_NAME: str | None
-    RESUME_EMBEDDING_FILE_NAME: str | None
+    GEMINI_MODEL_NAME: str = 'gemini-1.0-pro-001'
+    EMBEDDING_MODEL_NAME: str = 'textembedding-gecko@003'
+    JD_EMBEDDING_FILE_NAME: str = 'jd_embedding.pkl'
+    RESUME_EMBEDDING_FILE_NAME: str = 'resume_embedding.pkl'
 
-    JD_PATH: str | None
-    RESUME_PATH: str | None
-    OUTPUT_PATH: str | None
+    JD_PATH: str = '../../data/jd/*'
+    RESUME_PATH: str = '../../data/resume/*/*'
+    OUTPUT_PATH: str = '../output/'
     IS_EMBEDDINGS_CREATED: bool = True
 
     TEMPLATE_CONTENT: str = """You are a helpful assistant. You do not respond as 'User' or pretend to be 'User'. You only 
