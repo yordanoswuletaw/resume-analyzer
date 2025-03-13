@@ -57,7 +57,6 @@ Resume Analyzer AI is a tool designed to assess how effectively resumes match jo
    ```
 2. Initialize and install dependencies using GNU Make and Poetry:
    ```bash
-   make init
    make install
    ```
 3. Run the application:
